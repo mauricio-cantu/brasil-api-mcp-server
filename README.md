@@ -46,20 +46,40 @@ npm run build-and-inspect
 
 The Inspector will provide a URL to access debugging tools in your browser.
 
-## Integration with AI application
+## Integration with AI applications
 
 ### Running through Smithery
 
-To install brasil-api-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server):
+Run the server automatically via [Smithery](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server):
 
 ```bash
-npx -y @smithery/cli install @mauricio-cantu/brasil-api-mcp-server --client claude
+npx -y @smithery/cli install @mauricio-cantu/brasil-api-mcp-server
 ```
 
 ### Running the server with a local copy
 
-After you've cloned this repo, you can run the server using `node`:
+After you've downloaded this repo, you can run the server using `node`:
 
 ```bash
 node /absolute/path/to/brasil-api-mcp-server/build/index.js
 ```
+
+### Usage with Claude
+
+```bash
+npx -y @smithery/cli@latest install @mauricio-cantu/brasil-api-mcp-server --client claude
+```
+
+### Cursor and other integrations
+
+Check the Server page in [Smithery](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server) to get other integration options such as Cursor and more.
+
+## Server's capabilities inspection
+
+You can inspect this MCP server's capabilities using Smithery:
+
+```bash
+npx -y @smithery/cli@latest inspect @mauricio-cantu/brasil-api-mcp-server
+```
+
+This will show you all available tools, their parameters, and how to use them.
