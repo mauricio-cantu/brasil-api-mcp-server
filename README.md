@@ -1,5 +1,7 @@
 # BrasilAPI MCP Server MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@mauricio-cantu/brasil-api-mcp-server)](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server)
+
 MCP server that provides tools to query [BrasilAPI](https://github.com/BrasilAPI/BrasilAPI) across different clients and LLMs. Give the ability to LLMs to consume a variety of data from Brasil resources, including CEP (postal codes), DDD (area codes), Banks, Holidays, Taxes, CNPJ (Companies), BR domains and more.
 
 Check the complete and official documentation from BrasilAPI [here](https://brasilapi.com.br/docs).
@@ -48,8 +50,10 @@ The Inspector will provide a URL to access debugging tools in your browser.
 
 ### Running through Smithery
 
+To install brasil-api-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server):
+
 ```bash
-COMING SOON
+npx -y @smithery/cli install @mauricio-cantu/brasil-api-mcp-server --client claude
 ```
 
 ### Running the server with a local copy
