@@ -1,10 +1,6 @@
 import { z } from "zod";
-import {
-  McpResponse,
-  McpTextContent,
-  McpToolDefinition,
-} from "../types/MCP.js";
 import { brasilApiClient } from "../apiClient/brasilApiClient.js";
+import { McpTextContent, McpToolDefinition } from "../types/MCP.js";
 import { prettifyJson } from "../utils/index.js";
 
 const getCepToolParams = {
