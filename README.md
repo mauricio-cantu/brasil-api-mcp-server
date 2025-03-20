@@ -1,4 +1,4 @@
-# BrasilAPI MCP Server MCP Server
+# BrasilAPI MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@mauricio-cantu/brasil-api-mcp-server)](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server)
 
@@ -9,6 +9,8 @@ Check the complete and official documentation from BrasilAPI [here](https://bras
 ## Tools
 
 This server provides tools to query every endpoint available from BrasilAPI. Under the hood, it uses this JS client to communicate with the API: https://github.com/WillianAgostini/brasilapi-js
+
+Check the [Tools page in Smithery](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server/tools) to inspect and test each one of them.
 
 ## Development
 
