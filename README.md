@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/@mauricio-cantu/brasil-api-mcp-server)](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server)
 
-MCP server that provides tools to query [BrasilAPI](https://github.com/BrasilAPI/BrasilAPI) across different clients and LLMs. Give the ability to LLMs to consume a variety of data from Brasil resources, including CEP (postal codes), DDD (area codes), Banks, Holidays, Taxes, CNPJ (Companies), BR domains and more.
+Query a variety of data from Brasil resources seamlessly. Access information on postal codes, area codes, banks, holidays, taxes, and more through a unified interface. Enhance your AI agents and applications with rich and updated data from [BrasilAPI](https://github.com/BrasilAPI/BrasilAPI) effortlessly.
 
 Check the complete and official documentation from BrasilAPI [here](https://brasilapi.com.br/docs).
 
