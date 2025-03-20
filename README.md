@@ -58,14 +58,6 @@ Run the server automatically via [Smithery](https://smithery.ai/server/@mauricio
 npx -y @smithery/cli install @mauricio-cantu/brasil-api-mcp-server
 ```
 
-### Running the server with a local copy
-
-After you've downloaded this repo, you can run the server using `node`:
-
-```bash
-node /absolute/path/to/brasil-api-mcp-server/build/index.js
-```
-
 ### Usage with Claude
 
 ```bash
@@ -76,6 +68,16 @@ npx -y @smithery/cli@latest install @mauricio-cantu/brasil-api-mcp-server --clie
 
 Check the Server page in [Smithery](https://smithery.ai/server/@mauricio-cantu/brasil-api-mcp-server) to get other integration options such as Cursor and more.
 
+### Running the server with a local copy
+
+After you've downloaded this project, you can run the server using `node`:
+
+```bash
+node /absolute/path/to/brasil-api-mcp-server/build/index.js
+```
+
+At the root of the project there's also a Dockerfile to build and run the image if you'd like.
+
 ## Server's capabilities inspection
 
 You can inspect this MCP server's capabilities using Smithery:
@@ -85,3 +87,14 @@ npx -y @smithery/cli@latest inspect @mauricio-cantu/brasil-api-mcp-server
 ```
 
 This will show you all available tools, their parameters, and how to use them.
+
+## Project structure
+
+```
+src/
+  ├── apiClient/   # BrasilAPI client
+  ├── tools/       # Tools implementations
+  ├── types/       # Interfaces and types
+  ├── utils/       # Utility functions
+  └── index.ts     # MCP main file (server setup and tools listing)
+```
