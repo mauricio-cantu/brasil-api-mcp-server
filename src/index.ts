@@ -7,6 +7,7 @@ import { getCepV2Tool } from "./tools/cep-v2.js";
 import { registerTool } from "./utils/index.js";
 import { getBookByISBNTool } from "./tools/isbn.js";
 import { getCNPJTool } from "./tools/cnpj.js";
+import { getAllBanksTool, getBankByCodeTool } from "./tools/banks.js";
 
 /**
  * Server setup
@@ -26,14 +27,21 @@ const server = new McpServer(
 /**
  * Tools listing
  */
-const tools = [getCepTool, getCepV2Tool, getBookByISBNTool, getCNPJTool];
+const tools = [
+  getCepTool,
+  getCepV2Tool,
+  getBookByISBNTool,
+  getCNPJTool,
+  getAllBanksTool,
+  getBankByCodeTool,
+];
 
 tools.forEach((tool) => {
   registerTool(server, tool);
 });
 
 /**
- * Server initializer
+ * Server initialization
  */
 async function main() {
   const transport = new StdioServerTransport();
